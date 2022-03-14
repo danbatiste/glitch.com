@@ -10,3 +10,37 @@
   position: absolute;
   background-color: #ffffff;
 }
+
+.header {
+  width: 100%;
+  height: 15%;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.buttons_container {
+  width: 50%;
+  height: 85%;
+  background-color: yellowgreen;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button_home {
+  width: 30%;
+  height: 30%;
+  background-color: rgb(15, 160, 228);
+  margin-left: 2%;
+}
+
+.button_random {
+  width: 30%;
+  height: 30%;
+  background-color: rgb(15, 160, 228);
+  margin-left: 2%;
+}
