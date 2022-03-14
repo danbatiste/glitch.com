@@ -15,5 +15,7 @@ function myMove() {
     elem.style.left = pos + 5 * (Math.random() - 0.5) + "px";
     container.style.background =
       "#" + Math.floor((pos / 350) * 16 * 16 * 16 * 16 * 16 * 16).toString(16);
+    elem.width = 50 + 200*(Math.random() - 0.5) + "px";
+    elem.height = 50 + 200*(Math.random() - 0.5) + "px";
   }
 }
