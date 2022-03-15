@@ -24,7 +24,7 @@ function coolFunc() {
   document.getElementById("animate").innerText = parseInt(document.getElementById("animate").innerText) + 1;
   var elems = document.body.getElementsByTagName("*");
   var crazyfuncs = [
-    //(elem) => { elem.remove() },
+    //(elem1, elem2) => { elem1.remove() },
     (elem1, elem2) => { elem1.style.width = Math.random()*100 + "px" },
     (elem1, elem2) => { elem1.style.height = Math.random()*100 + "px" },
     (elem1, elem2) => { elem1.style.opacity = Math.floor(Math.random()*100) + "%" },
@@ -34,7 +34,8 @@ function coolFunc() {
     (elem1, elem2) => { elem1.style.backgroundColor = "#" + Math.floor((pos / 350) * 16 * 16 * 16 * 16 * 16 * 16).toString(16) },
     (elem1, elem2) => { alert("ATTENTION\n\nTHanks for your attention") },
     (elem1, elem2) => { document.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"},
-    (elem1, elem2) => { elem1.appendChild(elem2.cloneNode(true))}
+    (elem1, elem2) => { elem1.appendChild(elem2.cloneNode(true))},
+    (elem1, elem2) => { elem1.appendChild(elem2.cloneNode(true)); elem2.remove()},
   ];
   let randoelem1 = elems[Math.floor(Math.random()*elems.length)];
   let randoelem2 = elems[Math.floor(Math.random()*elems.length)];
